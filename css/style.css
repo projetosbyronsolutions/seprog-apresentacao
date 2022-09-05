@@ -94,27 +94,28 @@ body{
 
 .portfolio {
     display: flex;
-    width: 100%;
-    height: 20%;
-    position: relative;
+    align-items: center;
+    justify-content: center;
 
 
 }
-.portfolio span{
+.container_portfolio{
+    max-width: 100%;
+    
+}
+.texto_portfolio{
+    margin-top: 5%;
     position: absolute;
-    margin-left: 9.65%;
-    top: 120px;
+    margin-left: 10%;
+}
+.portfolio h6{
+
     font-family: 'Barlow-Bold';
     font-size: 180px;
     color: #FFFFFF;
-
 }
 
 .portfolio p{
-    position: absolute;
-
-    margin-left: 9.65%;
-    top: 310px;
     font-family: 'Barlow-regular';
     font-size: 60px;
 
@@ -124,7 +125,7 @@ body{
 
 }
 .vector {
-    width: 100%;
+    max-width: 100%;
 
 }
 
@@ -133,28 +134,24 @@ body{
 
 /* Inicio Hello */
 .hello {
-    padding-bottom: 3%;
-    height: 100%;
-    display: flex;
+    padding-top: 8%;
+    padding-bottom: 8%;
     background: #E5E5E5;
-}
-.hello img{
-    margin-top: 10%;
-    margin-left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container_hello{
-    justify-content: center;
-    align-items: center;
-    
+    display: flex;
+    margin-left: 7%;
 }
-
 .texto_hello{
-    margin-top: 10%;
-    margin-left: 10%;
+    
+    margin-top: 7%;
+    margin-right: 5%;
     font-family: 'Barlow-Medium';
     font-style: normal;
-
-    font-size: 63.2941px;
+    font-size: 64px;
 
 }
 
@@ -165,7 +162,7 @@ body{
 .texto_hello p{
     width: 450px;
     font-family: 'Barlow-light';
-    font-size: 36px;
+    font-size: 38px;
     color: #111111;
 
 
@@ -254,23 +251,18 @@ body{
 /* Inicio Projeto */
 
 .projetos {
+    padding-top: 5%;
     padding-bottom: 8%;
-    display:flex;
     background: #E5E5E5;
-    justify-content: center;
     align-items: center;
-    
-
-
+    justify-content: center;
 }
 
 .container_projeto{
-
-    justify-content: center;
-    align-items: center;
+    margin-left: 10%;
 }
 .titulo_projeto {
-    margin-top: 10%;
+
     font-family: 'Barlow-Bold';
     font-size: 42px;
 }
@@ -278,6 +270,7 @@ body{
 .lista_projeto {
     margin-top: 5%;
 }
+
 .lista_projeto ul{
 
     display: flex;
@@ -287,13 +280,13 @@ body{
 }
 
 .lista_projeto li{
-    width: 385px;
+    width: 24.5%;
     height:auto;
     border-radius: 26px;
     margin-right: 20px;
     list-style-type: none;
- 
     text-align: justify;
+
 }
 .laterais {
     background: #B34AB5;
@@ -312,7 +305,6 @@ body{
     font-family: 'Barlow-light';
     color: #FFFFFF;
     font-size: 25px;
-
 }
 .laterais img{
     border-radius: 10px;
@@ -346,13 +338,10 @@ body{
     height:auto;
 }
 
-.teste{
-    width: 100%;
-}
+
 .botao_projeto{
-    margin:auto;
-    margin-top: 3%;
-    width: 30%;
+    margin-top: 2%;
+    width: 25%;
     background: linear-gradient(180deg, #603CAF 0%, #B34AB5 100%);
     border-radius: 9.04202px;
     filter: drop-shadow(2px 6px 7px rgba(0, 0, 0, 0.2));
@@ -364,6 +353,11 @@ body{
     font-weight: 400px;
     font-family: 'Barlow-Regular';
     color: #FFFFFF;
+}
+.container_botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Fim Projeto */
