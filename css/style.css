@@ -93,17 +93,17 @@ body {
 }
 
 .menu li {
-    color: #fff;
     text-decoration: none;
     margin-right: 40px;
     list-style-type: none
 }
 
 .menu a {
-    text-decoration: none
+    text-decoration: none;
+    color: #fff;
 }
 
-.menu a:hover {
+.menu li:hover {
     transform: scale(1.15);
     transition: all .3s
 }
@@ -162,6 +162,10 @@ body {
     display: flex;
     width: 100%;
     margin-left: 10%;
+}
+
+.container_hello img{
+    width: 50%;
 }
 
 .texto_hello {
@@ -497,7 +501,7 @@ body {
 
 .grid-template-columns { /* espaçamento de cada coluna do grid */
     grid-template-columns: 150px 200px;
-    grid-gap: 10px 20px;
+    grid-gap: 10px 10px;
 }
 
 .contato {
