@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Instruções para os algoritmos dos sites de busca  -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Titulo da Pagina -->
     <title>SEPROG</title>
-    <link rel="icon" type="image/png" href="img/icone-site.png"/>
+
+    <!-- Icone da Pagina -->
+    <link rel="icon" type="image/png" href="img/icone-site.png" />
+
+    <!-- Importar CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Inicio Header -->
-
     <header class="header">
       <div class="gradient">
         <div class="logo">
-          <img src="img/logo.svg" alt="logo_ana" />
-          <a href="#zero"><p>Ana Maísa</p></a>
+          <img src="img/logo.svg" alt="" />
+          <a href="#hello"><p class="hover">Ana Maísa</p></a>
         </div>
 
         <div class="menu">
           <ul>
-            <li><a href="#primeiro">SOBRE</a></li>
-            <li><a href="#segundo">PROJETO</a></li>
-            <li><a href="#terceiro">SERVIÇOS</a></li>
-            <li><a href="#quarto">CONTATO</a></li>
+            <li class="hover"><a href="#sobre">SOBRE</a></li>
+            <li class="hover"><a href="#projetos">PROJETO</a></li>
+            <li class="hover"><a href="#servicos">SERVIÇOS</a></li>
+            <li class="hover"><a href="#contato">CONTATO</a></li>
           </ul>
         </div>
       </div>
@@ -31,32 +37,28 @@
     <!-- Fim do Header -->
 
     <!-- Inicio Portfolio -->
-
-    <div class="portfolio">
-      <div class="texto_portfolio">
-        <h6>PORTFÓLIO</h6>
-        <p>Seja bem-vindo!</p>
-      </div>
-
-      <div class="vector"><img src="img/degrade.png" alt="vector" /></div>
+    
+    <div class="texto_portfolio">
+      <h6>PORTFÓLIO</h6>
+      <p>Seja bem-vindo!</p>
     </div>
+
+    <div class="vector"><img src="img/degrade.png" alt="vector" /></div>
 
     <!-- Fim Portfolio -->
 
     <!-- Inicio Olá  -->
-    <section id="zero">
+    <section id="hello">
       <div class="hello">
         <div class="container_hello">
-            <img src="img/img.png" alt="imagem_ana" />
+          <img src="img/img.png" alt="imagem_ana" />
           <div class="texto_hello">
             <span>Olá, sou Ana Maísa!</span>
             <p>Desenvolvedora Front-end e gerente de Marketing!</p>
 
-            <div class="card">
-              <a href="https://www.instagram.com/anamaisa.ns/" target="_blank"
-                ><p>@anamaisa.ns</p></a
-              >
-            </div>
+            <a href="https://www.instagram.com/anamaisa.ns/" target="_blank"><button class="card">
+             <p>@anamaisa.ns</p></a>
+            </button>
           </div>
         </div>
       </div>
@@ -64,7 +66,7 @@
     <!-- Fim Olá -->
 
     <!-- Inicio Sobre -->
-    <section id="primeiro">
+    <section id="sobre">
       <div class="sobre">
         <div class="conteudo_sobre">
           <div class="sobre_titulo">
@@ -79,11 +81,9 @@
             bebadis, arcu quam euismod magna.
           </div>
 
-          <div class="sobre_card">
-            <a href="https://www.instagram.com/anamaisa.ns/" target="_blank"
-              ><p>@anamaisa.ns</p></a
-            >
-          </div>
+          <button class="card">
+            <a href="https://www.instagram.com/anamaisa.ns/" target="_blank"><p>@anamaisa.ns</p></a>
+          </button>
         </div>
         <div class="sobre-foto">
           <img src="img/foto.svg" alt="" />
@@ -93,7 +93,7 @@
     <!-- Fim Sobre -->
 
     <!-- Inicio Projetos -->
-    <section id="segundo">
+    <section id="projetos">
       <div class="projetos">
         <div class="container_projeto">
           <div class="titulo_projeto">
@@ -130,9 +130,9 @@
           </div>
         </div>
         <div class="container_botao">
-          <div class="botao_projeto">
+          <button class="card repositorio">
             <a href=""><p>Repositório do GitHub</p></a>
-          </div>
+          </button>
         </div>
       </div>
     </section>
@@ -140,39 +140,35 @@
     <!-- Fim Projetos -->
 
     <!-- Inicio Servicos -->
-    <section id="terceiro">
+    <section id="servicos">
       <div class="servico">
-        <div class="container_servico">
           <div class="parte1">
             <div class="titulo_servico"><p>Serviços</p></div>
-
             <div class="lista_servico">
               <ul>
-                <li class="botao_cima_baixo"><p>Web Design</p></li>
-                <li class="botao_servico_meio"><p>Web Development</p></li>
-                <li class="botao_cima_baixo"><p>Mobile App</p></li>
+                <li class="botao_roxo"><p>Web Design</p></li>
+                <li class="botao_rosa"><p>Web Development</p></li>
+                <li class="botao_roxo"><p>Mobile App</p></li>
               </ul>
             </div>
           </div>
           <div class="linha-vertical"></div>
           <div class="parte2">
             <div class="titulo_servico"><p>Conhecimentos</p></div>
-
             <div class="grid grid-template-columns">
-              <div class="botao_conhecimento_baixo"><p>Figma</p></div>
+              <div class="botao_conhecimento_css"><p>Figma</p></div>
               <div class="botao_conhecimento_meio"><p>Photoshop</p></div>
               <div class="botao_conhecimento_baixo"><p>HTML</p></div>
               <div class="botao_conhecimento_baixo"><p>CSS</p></div>
               <div class="botao_conhecimento_css"><p>Git</p></div>
             </div>
           </div>
-        </div>
       </div>
     </section>
     <!-- Fim Servicos -->
 
     <!-- Contato -->
-    <section id="quarto">
+    <section id="contato">
       <div class="contato">
         <div class="container_contato">
           <div class="titulo_contato"><p>ENTRE EM CONTATO!</p></div>
