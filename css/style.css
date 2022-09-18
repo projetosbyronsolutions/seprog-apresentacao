@@ -52,7 +52,6 @@ body {
     
 }
 
-
 .gradient {
     display: flex;
     width: 80%;
@@ -111,11 +110,10 @@ body {
 /* Fim do Header */
 
 /* Inicio do Porfolio */
-.portfolio {
-    display: flex;
-    
-}
 
+.portfolio {
+    display: flex;  
+}
 
 .texto_portfolio {
     position: absolute;
@@ -135,7 +133,6 @@ body {
     font-family: Barlow-light;
     font-size: 4rem;
     color: #fff;
-
 }
 
 .vector {
@@ -145,74 +142,65 @@ body {
 .vector img{
     width: 100%;
 }
+
 /* Fim do Portfolio */
 
 /* Inicio do Olá */
-.hello {
-    padding-top: 8%;
-    padding-bottom: 8%;
-    background: #e5e5e5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-}
 
 .container_hello {
-    display: flex;
-    width: 100%;
-    margin-left: 10%;
+    display: grid;
+    padding: 5% 10% 5% 10%;
+    background-color: #e5e5e5;
+    grid-template-columns: 50% 50%;
 }
 
 .container_hello img{
-    width: 50%;
+    width: 100%;
+    justify-self: center;
 }
 
-.texto_hello {
-    margin-top: 7%;
-    font-family: Barlow-Medium;
+.texto_hello h2 {
+    color: #111;
+    font-size: 4vw;
+    font-weight: 500;
+    padding-top: 3rem;
     font-style: normal;
-    font-size: 64px
-}
-
-.texto_hello span {
-    color: #111
+    font-family: Barlow-Medium;
 }
 
 .texto_hello p {
     width: 75%;
+    color: #111;
+    font-size: 2.5vw;
     font-family: Barlow-light;
-    font-size: 38px;
-    color: #111
 }
 
-.card {
-    margin-top: 5%;
+.button {
     width: 45%;
     height: 9%;
+    margin-top: 5%;
     text-align: center;
+    border-radius: 9px;
+    filter: drop-shadow(2px 6px 7px rgba(0, 0, 0, .2));
     background: linear-gradient(180deg, #603caf 0, #b34ab5 100%);
-    border-radius: 9.04202px;
-    filter: drop-shadow(2px 6px 7px rgba(0, 0, 0, .2))
 }
 
-.card:hover {
-    transform: scale(1.1);
-    transition: all .5s
+.button a {
+    text-decoration: none;
 }
 
-.card a {
-    text-decoration: none
-}
-
-.card p {
-    line-height: 40px;
-    width: auto;
-    font-size: 25px;
+.button p {
+    margin: auto;
+    color: #fff;
+    font-size: 2vw;
     font-family: Barlow-Regular;
-    color: #fff
-
 }
+
+.button:hover {
+    transition: all .5s;
+    transform: scale(1.1);
+}
+
 /* Fim Olá */
 
 .sobre {
